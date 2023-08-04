@@ -41,7 +41,7 @@ function fetchPrices(city) {
           const priceC = document.createElement('p');
           //priceP.textContent = `Preis: ${station.price}€`;
           priceP.textContent = `Preis E10: ${station.e10}€`;
-          priceC.textContent = `Preis Diesel: ${station.diesel}€`;
+          priceC.textContent = `Preis Diesel: ${station.diesel}€`; 
 
           priceDiv.appendChild(stationP);
           priceDiv.appendChild(priceP);
