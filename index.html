@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body {
-            background-color: blue;
-            color: white;
-            font-size: large;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-    </style>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <p>Hallo Tank & Rast</p>
+  <header>
+    <h1>Spritpreise</h1>
+  </header>
+  
+  <section>
+        <button type="button" id="Berlin" onclick="fetchPrices('Berlin')" class="city-button">Berlin</button>
+        <button type="button" id="Hamburg" onclick="fetchPrices('Hamburg')" class="city-button">Hamburg</button>
+        <button type="button" id="Cologne" onclick="fetchPrices('Cologne')" class="city-button">Cologne</button>
+        <input id="rad" type="number" step="any" placeholder="Umkreis" required>
+        <div id="prices"></div>
+    </form>
+    <div id="prices"></div>
+  </section>
+  
+  <footer>
+   <p>&copy; 2023 Joschki-Tank&Rast-Preisabfragesystem</p>
+  </footer>
+  
+  <script src="script.js"></script>
 </body>
 </html>
